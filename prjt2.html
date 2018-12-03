@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webzone of css </title>
+</head>
+<style>
+*{
+	box-sizing: border-box;
+	
+}
+.container{
+	margin-top: 10px;
+	position: relative;
+
+	
+}
+h1{
+	text-align: center;
+}
+p{
+	width:100%;
+	height:130px;
+	font-family: sans-serif;
+	padding: 35px;
+	background: darkgrey;
+	color: white;
+	border: 1px solid black;
+
+
+}
+.header{
+	position: absolute;
+	right:-1px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid black;
+	height: 40px;
+	width: 100px;
+	padding: 5px;
+}
+.header.chiken{
+	background: pink;
+}
+.header.beef{
+	background:brown;
+}
+.header.sushi{
+	background:red;
+}
+@media(min-width: 800px){
+	.container{
+		width:33.3%;
+		float:left;
+		padding-right: 5px;
+
+	}
+	.header.chiken,.beef,.sushi{
+		position:absolute;
+		margin-top: 15px;
+		margin-right: 5px;
+
+	
+	}
+}
+@media(min-width:0px) and (max-width:900px){
+	.container.chiken{
+		width:50%;
+		float:left;
+
+	}
+	.container.beef{
+		width:50%;
+		float:right;
+		
+	}
+	.container.sushi{
+		width:100%;
+		float:left;
+		
+	}
+}
+
+
+
+
+
+</style>
+<body>
+	<h1>our menu</h1>
+	<div class="container ">
+		
+		<div class="header chiken">chiken</div>
+			<p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.</p>
+	
+	
+</div>
+	<div class="container ">
+		<div class="header beef">beef</div>
+		<p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.</p>
+	
+	</div>
+	
+		<div class="container ">
+		<div class="header sushi">sushi</div>
+		<p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.</p>
+		</div>
+	
+</body>
+</html>
+		
