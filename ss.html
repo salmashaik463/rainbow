@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in page</title>
+	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
+</head>
+<style>
+.folder{
+	position: absolute;
+	top: 30%;
+	left:45%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+input{
+	display: block;
+	height:20px;
+	width:200px;
+	border:2px solid #C80000 ;
+	outline: 1px solid #C80000;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-family:sans-serif;
+    margin-left: 60px;
+   }
+#button{
+	background-color:#C80000 ;
+	cursor: pointer;
+	width:100px;
+	height:25px;
+	font-size: 18px;
+	margin-top: 20px;
+	padding:1px;
+	position: relative;
+	}
+	#rain{
+	background-color:#C80000 ;
+	cursor: pointer;
+	width:100px;
+	height:25px;
+	font-size:18px;
+	margin-top: -35px;
+	padding:1px;
+	position: relative;
+	float:right;
+	right:40px;
+	}
+.content{
+	padding-bottom: 20px;
+}
+img{
+margin-bottom:16px;
+}
+
+</style>
+<body>
+    <div class="folder">
+		<img src="bull.jpg">
+        <div class="content">
+		<form>
+		<input type="text" name="user name" placeholder="enter user name" >
+		<input type="text" name="password" placeholder="enter password">
+		<input type="submit" id="button" name="login" value="login">
+		<input type="submit" id="rain" name="cancel" value="cancel">
+		</form>
+	</div>
+</div>
+</body>
+</html>
+<script>
+function check(form)/*function to check username & password*/
+	{
+	/*the following code checkes whether the entered userid and password are matching*/
+	if(form.username.value == "salma" && form.pswrd.value == "8500150815")	
+{
+		window.open('salma.html')/*opens the target page while Id & password matches*/
+		}
+	else
+		{
+		alert("Error Password or Username")/*displays error message*/
+		}
+	}
+
+</script>
+</body>
+</html>
